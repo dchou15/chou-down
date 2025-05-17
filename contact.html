@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Derek Chou | Home</title>
+  <title>Derek Chou | Contact</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -20,9 +20,23 @@
         <a href="contact.html">Contact</a>
       </nav>
     </aside>
+
     <main class="main-content">
-      <h1>Welcome!</h1>
-      <p>I’m Derek — a data-driven strategist passionate about tech, sports, and solving real-world business problems.</p>
+      <h1>Contact Me</h1>
+      <p>If you'd like to get in touch, feel free to use the form below or email me directly at <a href="mailto:you@example.com">you@example.com</a>.</p>
+      
+      <form action="https://formspree.io/f/yourformid" method="POST" class="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+
+        <button type="submit" class="btn">Send Message</button>
+      </form>
     </main>
   </div>
 </body>
