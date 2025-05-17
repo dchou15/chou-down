@@ -3,41 +3,42 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Derek Chou | Contact</title>
+  <title>Contact | Derek Chou</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <aside class="sidebar">
-      <img src="profile.jpg" alt="Derek Chou" class="profile-pic" />
-      <h2>Derek Chou</h2>
-      <p>MBA Candidate @ Georgetown</p>
-      <nav class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="resume.html">Resume</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </aside>
+  <header class="navbar">
+    <div class="logo">Derek.</div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-    <main class="main-content">
+  <section class="hero">
+    <div class="hero-text">
       <h1>Contact Me</h1>
-      <p>If you'd like to get in touch, feel free to use the form below or email me directly at <a href="mailto:you@example.com">you@example.com</a>.</p>
-      
-      <form action="https://formspree.io/f/yourformid" method="POST" class="contact-form">
-        <label for="name">Name</label>
+      <p>Want to work together or have a question? Send me a message below — I’ll respond within 24–48 hours.</p>
+
+      <form action="https://formspree.io/f/yourformid" method="POST" class="contact-form" style="margin-top: 30px; display: flex; flex-direction: column; gap: 12px; max-width: 500px;">
+        <label for="name">Your Name</label>
         <input type="text" id="name" name="name" required>
 
-        <label for="email">Email</label>
+        <label for="email">Your Email</label>
         <input type="email" id="email" name="email" required>
+
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject">
 
         <label for="message">Message</label>
         <textarea id="message" name="message" rows="6" required></textarea>
 
-        <button type="submit" class="btn">Send Message</button>
+        <button type="submit" class="btn primary">Send Message</button>
       </form>
-    </main>
-  </div>
+    </div>
+  </section>
 </body>
 </html>
