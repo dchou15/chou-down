@@ -118,3 +118,87 @@ body {
     display: none;
   }
 }
+
+.about {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  padding: 80px;
+  background: #000;
+  color: white;
+  gap: 60px;
+}
+
+.about-text {
+  flex: 1;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+.about-text h1 {
+  font-size: 3rem;
+  margin-bottom: 24px;
+  font-weight: 700;
+}
+
+.about-text p {
+  margin-bottom: 20px;
+  color: #ccc;
+  font-size: 1.1rem;
+}
+
+.about-photo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.about-photo img {
+  max-height: 80vh;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  .about-photo img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Top Navigation */
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  background-color: transparent; /* or #000 if needed */
+}
+
+.logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.top-nav nav a {
+  margin-left: 20px;
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  font-size: 0.95rem;
+  letter-spacing: 0.05em;
+  transition: color 0.2s ease;
+}
+
+.top-nav nav a:hover {
+  color: #fff;
+}
