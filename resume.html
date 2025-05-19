@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Resume | Derek Chou</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <header class="navbar">
+  <header class="top-nav">
     <div class="logo">Derek.</div>
-    <nav class="nav">
+    <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="projects.html">Projects</a>
@@ -18,28 +19,20 @@
     </nav>
   </header>
 
-  <section class="hero">
-    <div class="hero-text">
-      <h1>My Resume</h1>
-      <p>You can view my resume below or download it using the button at the bottom.</p>
-
-      <div class="resume-viewer" style="margin-top: 20px;">
-        <iframe src="resume.pdf" width="100%" height="700px" style="border: none; border-radius: 8px;"></iframe>
-      </div>
-
-      <a href="resume.pdf" class="btn primary" target="_blank" style="margin-top: 20px; display: inline-block;">Download Resume</a>
+  <section class="section-container">
+    <div class="section-text">
+      <h1>Resume</h1>
+      <p><strong>Current:</strong> MBA Candidate, Georgetown University</p>
+      <p><strong>Past Roles:</strong></p>
+      <ul>
+        <li><strong>Senior Analyst, Kaiser Permanente:</strong> Built tools to drive $20M+ in savings across supply chain finance.</li>
+        <li><strong>Technology Consultant, EY:</strong> Delivered data strategy, dashboards, and process automation solutions.</li>
+      </ul>
+      <p><a href="resume.pdf" target="_blank" style="color: #00d1b2;">Download PDF Resume</a></p>
+    </div>
+    <div class="section-image">
+      <img src="profile.jpg" alt="Derek Chou">
     </div>
   </section>
 </body>
 </html>
-
-<header class="top-nav">
-  <div class="logo">Derek.</div>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="projects.html">Projects</a>
-    <a href="resume.html">Resume</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
