@@ -1,4 +1,4 @@
-/* General Reset */
+/* Reset & base styles */
 * {
   margin: 0;
   padding: 0;
@@ -7,9 +7,10 @@
 body {
   font-family: 'Inter', sans-serif;
   color: #fff;
+  background-color: #000;
 }
 
-/* Transparent Top Navigation */
+/* Navigation */
 .top-nav {
   position: absolute;
   top: 20px;
@@ -19,20 +20,21 @@ body {
 .top-nav nav a {
   margin-left: 20px;
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.85);
   font-size: 0.9rem;
   letter-spacing: 0.05em;
-  transition: color 0.3s;
+  transition: color 0.3s ease;
 }
 .top-nav nav a:hover {
   color: #fff;
 }
 
-/* Full Background Hero Section */
+/* Hero section */
 .full-hero {
   height: 100vh;
   width: 100%;
-  background: url('profile.jpg') center center / cover no-repeat;
+  background: url('profile.jpg') right center / contain no-repeat;
+  background-color: #000;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -40,12 +42,12 @@ body {
 }
 
 .hero-overlay {
-  background: rgba(0, 0, 0, 0.3); /* Optional: dim effect */
   width: 100%;
   height: 100%;
+  padding-left: 80px;
   display: flex;
   align-items: center;
-  padding-left: 80px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 40%, rgba(0, 0, 0, 0) 90%);
 }
 
 .hero-text {
@@ -61,7 +63,7 @@ body {
   color: #ddd;
 }
 
-/* Responsive Layout */
+/* Responsive layout */
 @media screen and (max-width: 768px) {
   .hero-text h1 {
     font-size: 2.5rem;
@@ -69,11 +71,17 @@ body {
   .hero-text p {
     font-size: 1rem;
   }
-  .hero-overlay {
-    padding: 40px;
-  }
   .top-nav {
     top: 10px;
     right: 20px;
+  }
+  .hero-overlay {
+    padding: 30px;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  .full-hero {
+    background-position: center top;
+    background-size: cover;
   }
 }
