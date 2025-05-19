@@ -1,4 +1,4 @@
-/* Reset + Base */
+/* Base Reset */
 * {
   margin: 0;
   padding: 0;
@@ -6,11 +6,13 @@
 }
 body {
   font-family: 'Inter', sans-serif;
-  background: linear-gradient(to right, #000 50%, #111 100%);
+  background: #000;
   color: #fff;
+  height: 100vh;
+  overflow-x: hidden;
 }
 
-/* Top Navigation */
+/* Top Nav */
 .top-nav {
   position: absolute;
   top: 0;
@@ -36,23 +38,22 @@ body {
   color: #fff;
 }
 
-/* Section Layout */
+/* Hero Section */
 .section-container {
   display: flex;
-  min-height: 100vh;
-  align-items: center;
-  padding: 120px 80px 80px;
-  gap: 60px;
+  height: 100vh;
+  width: 100%;
 }
+
 .section-text {
   flex: 1;
+  padding: 120px 80px 80px;
   max-width: 600px;
   line-height: 1.6;
 }
 .section-text h1 {
   font-size: 3.5rem;
   margin-bottom: 12px;
-  font-weight: 700;
 }
 .section-text h3 {
   font-size: 1.2rem;
@@ -78,17 +79,21 @@ body {
   background: #00a892;
 }
 
-/* Image */
+/* Full-Height Image on Right */
 .section-image {
+  height: 100vh;
+  width: auto;
   flex: 1;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
+  align-items: center;
+  overflow: hidden;
 }
 .section-image img {
+  height: 100vh;
   width: auto;
-  max-height: 80vh;
-  border-radius: 10px;
-  object-fit: contain;
+  object-fit: cover;
+  border-radius: 0;
 }
 
 /* Responsive */
@@ -100,8 +105,16 @@ body {
   }
   .section-container {
     flex-direction: column;
+    height: auto;
+  }
+  .section-text {
     padding: 100px 20px 40px;
     text-align: center;
+  }
+  .section-image {
+    width: 100%;
+    height: auto;
+    justify-content: center;
   }
   .section-image img {
     width: 100%;
