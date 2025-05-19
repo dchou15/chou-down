@@ -38,7 +38,9 @@ body {
   height: 100vh;
   padding: 80px;
   background: linear-gradient(to right, #000 40%, rgba(0, 0, 0, 0.2)),
-              url('profile.jpg') right center / cover no-repeat;
+              url('profile.jpg') right center no-repeat;
+  background-size: contain;
+  background-color: #000;
   position: relative;
 }
 
