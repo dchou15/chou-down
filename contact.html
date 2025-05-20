@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Derek Chou | Contact</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 </head>
 <body>
   <header class="top-nav">
@@ -19,18 +20,31 @@
   </header>
 
   <section class="section-container">
-    <div class="section-text">
+    <div class="section-text" data-aos="fade-up">
       <h1>Contact Me</h1>
       <form class="contact-form" action="https://formspree.io/f/xeognndy" method="POST">
         <input type="text" name="name" placeholder="Your Name" required />
         <input type="email" name="email" placeholder="Your Email" required />
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
       </form>
     </div>
+
     <div class="section-image">
+      <div class="image-overlay"></div>
       <img src="profile.jpg" alt="Derek Chou" />
     </div>
   </section>
+
+  <footer class="footer">
+    <p>© 2025 Derek Chou</p>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/derekchou" target="_blank">🔗</a>
+      <a href="https://github.com/dchou15" target="_blank">💻</a>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
 </body>
 </html>

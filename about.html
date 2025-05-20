@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Derek Chou | About</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 </head>
 <body>
   <header class="top-nav">
@@ -19,15 +20,35 @@
   </header>
 
   <section class="section-container">
-    <div class="section-text">
+    <div class="section-text" data-aos="fade-up">
       <h1>About Me</h1>
       <p>I'm currently pursuing my MBA at Georgetown University with a background in data analytics, business strategy, and consulting. I've worked at EY and Kaiser Permanente and am passionate about solving real-world problems through creative, data-backed solutions.</p>
       <p>Outside of work, I enjoy soccer, fantasy sports, traveling (40+ countries), and learning about innovative technologies and business models.</p>
-      <p>My goal is to bridge the gap between strategic thinking and analytical execution—helping companies not just make decisions, but make the right ones.</p>
+
+      <h2 style="margin-top: 30px;">Core Skills</h2>
+      <ul class="skills-list">
+        <li>SQL</li>
+        <li>Python</li>
+        <li>Data Visualization</li>
+        <li>Excel Modeling</li>
+        <li>Strategic Planning</li>
+      </ul>
     </div>
     <div class="section-image">
+      <div class="image-overlay"></div>
       <img src="profile.jpg" alt="Derek Chou" />
     </div>
   </section>
+
+  <footer class="footer">
+    <p>© 2025 Derek Chou</p>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/derekchou" target="_blank">🔗</a>
+      <a href="https://github.com/dchou15" target="_blank">💻</a>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
 </body>
 </html>
